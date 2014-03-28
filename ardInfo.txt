@@ -1,0 +1,38 @@
+###############################################################################
+####Arduino Info
+###############################################################################
+
+####
+UNO
+####
+ATMEGA328P-PU	- ATMEL
+32Kbytes in system programmable flash
+-40C to 80C
+1.8-5.5V
+Power; 0.2 mA if 1MHz, 1.8V, 2532Kbytes in system programmable flash
+
+Flash; program space;persists after poweroff(32000 bytes)
+SRAM; static access memory; sketch stores and manips its vars(2048 bytes)
+EEPROM; longterm memory; persists after poweroff (1024 bytes)
+UNO and Mega 256 use an ATmega8U2 instead of an FTDI chip for USB-serial communication
+Serial.println(F("This string will be stored in flash mem."));
+
+
+Motors to work with:
+Faulhaber motoren
+2342L012C R
+M124-2002
+
+High sensitivity Mini Servo
+ES08A by EMAX
+
+Need a motor driver;
+	Sabertooth
+
+Push buttons:
+	1	2
+	H   O	H
+	3	4
+
+	H is a gap, or ridge, pins 1,3 and 2, 4 are always connected
+	Button pushed, connects pins 1,2, and 3, 4
