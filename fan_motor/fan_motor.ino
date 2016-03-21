@@ -7,7 +7,7 @@
  This example code is in the public domain.
  */
 
-int led = 9;           // the pin that the LED is attached to
+int motor = 9;           // the pin that the LED is attached to
 int light = 7;
 int button = 8;
 int run = 0, secp = 0;
@@ -17,7 +17,7 @@ int fadeAmount = 5;    // how many points to fade the LED by
 // the setup routine runs once when you press reset:
 void setup()  { 
   // declare pin 9 to be an output:
-  pinMode(led, OUTPUT);
+  pinMode(motor, OUTPUT);
   pinMode(button, OUTPUT);
   pinMode(light, OUTPUT);
 } 
@@ -34,7 +34,7 @@ void loop()  {
   if(run)
   {
     // set the brightness of pin 9:
-    analogWrite(led, brightness);    
+    analogWrite(motor, brightness);    
     digitalWrite(light, HIGH);
   
     // change the brightness for next time through the loop:
